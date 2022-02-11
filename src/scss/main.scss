@@ -1,0 +1,152 @@
+//---------------------------------------------
+//
+//  Table of Contents
+//
+//    1. Basics
+//    2. Page Layout
+//    3. Components
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Basics
+//---------------------------------------------
+
+@import "variables";
+@import "bootstrap";
+@import "fonts";
+
+//---------------------------------------------
+// 2. Page Layout
+//---------------------------------------------
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    padding: 0px 0px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light{
+    padding: 10 0px;
+}
+
+
+::-webkit-scrollbar { //era orrenda sry
+    display: none;
+  }
+
+
+ul{
+
+    li{
+        margin: 3px;
+    }
+}
+
+
+/*
+div.container{
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
+    background-size: 100% 100%;
+    //display: block;
+    box-sizing: border-box;
+    padding: 0;
+}
+*/
+
+
+
+.immagine{
+    background: transparent url('../images/top/alps.webp') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 160px 0px;
+    //min-height: 100%;
+    //min-width: 100%;
+    
+    
+}
+
+div.container{
+    max-width: 500px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.bottone{
+    padding-top: 25px;
+}
+
+.contenitore{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    
+    
+}
+
+.resorts{
+    padding-top: 120px;
+    //padding-bottom: 20px;
+}
+
+.card-text{
+    font-size: 15px;
+    
+}
+
+.contenitore-card{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+hr{
+    opacity: 0.2;
+}
+
+.card{
+    border-color: transparent;
+}
+
+.footer{
+    background-color: #3a3a3a;
+    margin-top: 110px;
+    
+    
+    color: #ccc;
+}
+
+.copy{
+    //padding-top: 100px;
+    //padding-bottom: 80px;
+    //padding-left: 160px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 160px;
+
+        h5{
+            margin-bottom: 0px;
+        }
+}
+
+div.card-body{
+    padding-left: 0px;
+}
+
+
+
