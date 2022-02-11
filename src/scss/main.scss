@@ -21,13 +21,14 @@
 //---------------------------------------------
 
 
-
-
-
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+body {
     overflow-x: hidden;
 
 }
@@ -86,12 +87,21 @@ div.container{
     padding-bottom: 200px;
     text-align: center;
     color: #fff;
+    text-shadow: 3px 3px 5px #000000;
+
+    h1{
+        text-shadow: 4px 4px 4px #000000;
+    }
+
+    h6{
+        text-shadow: 4px 4px 4px #000000;
+    }
 }
 
 .bottone{
     padding-top: 25px;
 }
-
+/*
 .contenitore{
     display: flex;
     justify-content: space-between;
@@ -99,20 +109,14 @@ div.container{
     
     
 }
+*/
 
-.resorts{
-    padding-top: 120px;
-    //padding-bottom: 20px;
-}
 
-.card-text{
-    font-size: 15px;
-    
-}
+
 
 .contenitore-card{
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 87px;
+    margin-right: 87px;
 }
 
 hr{
@@ -121,7 +125,40 @@ hr{
 
 .card{
     border-color: transparent;
+    width: 20%;
+    transition: 0.3s;
+    
 }
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.resorts{
+    padding-top: 120px;
+    margin-bottom: 80px;
+    padding-left: -10px;
+}
+
+.card-body{
+    padding-left: 0px;
+    display: block;
+    
+}
+
+.card-text{
+    font-size: 15px;
+    
+}
+
+
+/*
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+*/
 
 .footer{
     background-color: #3a3a3a;
@@ -144,9 +181,12 @@ hr{
         }
 }
 
-div.card-body{
-    padding-left: 0px;
+
+
+
+//media queries
+@media screen and (max-width: 1000px){
+    .card{
+        width: 40%;
+    }
 }
-
-
-
