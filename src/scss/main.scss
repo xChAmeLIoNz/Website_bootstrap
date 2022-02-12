@@ -20,40 +20,124 @@
 // 2. Page Layout
 //---------------------------------------------
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     overflow-x: hidden;
-
 }
 
-.navbar{
+.navbar {
     padding: 0px 0px;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light{
+nav.navbar.navbar-expand-lg.navbar-light {
     padding: 10 0px;
 }
 
-
-::-webkit-scrollbar { //era orrenda sry
+::-webkit-scrollbar {
+    //era orrenda sry
     display: none;
-  }
+}
 
-
-ul{
-
-    li{
+ul {
+    li {
         margin: 3px;
     }
 }
 
+.immagine {
+    background: transparent url("../images/top/alps.webp") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 160px 0px;
+    //min-height: 100%;
+    //min-width: 100%;
+}
+
+div.container {
+    max-width: 500px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 5px #000000;
+
+    h1 {
+        text-shadow: 4px 4px 4px #000000;
+    }
+
+    h6 {
+        text-shadow: 4px 4px 4px #000000;
+    }
+}
+
+.bottone {
+    padding-top: 25px;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.resorts {
+    padding-top: 120px;
+    margin-bottom: 80px;
+    //padding-left: -10px;
+}
+/*
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+*/
+.card {
+    
+    border-color: transparent;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.card-body {
+    text-align: left;
+    padding: 0;
+    padding-top: 25px;
+}
+
+.contenitoress {
+    margin: 0px 90px;
+}
+
+.footer {
+    background-color: #3a3a3a;
+    margin-top: 110px;
+
+    color: #ccc;
+}
+
+.copy {
+    //padding-top: 100px;
+    //padding-bottom: 80px;
+    //padding-left: 160px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 160px;
+
+    h5 {
+        margin-bottom: 0px;
+    }
+}
 
 /*
 div.container{
@@ -68,125 +152,35 @@ div.container{
 }
 */
 
-
-
-.immagine{
-    background: transparent url('../images/top/alps.webp') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    padding: 160px 0px;
-    //min-height: 100%;
-    //min-width: 100%;
-    
-    
-}
-
-div.container{
-    max-width: 500px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-    color: #fff;
-    text-shadow: 3px 3px 5px #000000;
-
-    h1{
-        text-shadow: 4px 4px 4px #000000;
-    }
-
-    h6{
-        text-shadow: 4px 4px 4px #000000;
-    }
-}
-
-.bottone{
-    padding-top: 25px;
-}
 /*
 .contenitore{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    
-    
+    margin-top: 100px;    
 }
 */
 
-
-
-
-.contenitore-card{
-    margin-left: 87px;
-    margin-right: 87px;
-}
-
-hr{
-    opacity: 0.2;
-}
-
-.card{
-    border-color: transparent;
-    width: 20%;
-    transition: 0.3s;
-    
-}
-
-.row{
-    display: flex;
-    justify-content: space-around;
-}
-
-.resorts{
-    padding-top: 120px;
-    margin-bottom: 80px;
-    padding-left: -10px;
-}
-
-.card-body{
-    padding-left: 0px;
-    display: block;
-    
-}
-
-.card-text{
-    font-size: 15px;
-    
-}
-
-
-/*
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-}
-*/
-
-.footer{
-    background-color: #3a3a3a;
-    margin-top: 110px;
-    
-    
-    color: #ccc;
-}
-
-.copy{
-    //padding-top: 100px;
-    //padding-bottom: 80px;
-    //padding-left: 160px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 160px;
-
-        h5{
-            margin-bottom: 0px;
-        }
-}
-
-
-
-
-//media queries
-@media screen and (max-width: 1000px){
-    .card{
-        width: 40%;
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
     }
-}
+  }
+  
+  @media screen and (max-width: 620px) {
+    .contenitoress {
+      width: 100%;
+    }
+  
+    .card-title {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
+
+
+
