@@ -96,8 +96,8 @@ hr {
     flex-flow: wrap;
 }
 */
+
 .card {
-    
     border-color: transparent;
 }
 
@@ -159,28 +159,57 @@ div.container{
     margin-top: 100px;    
 }
 */
+/*
+.main-title {
+    font-size: 50px;
+}
 
-@media screen and (max-width: 1000px) {
-    .card {
-      width: 40%;
-    }
-  }
-  
-  @media screen and (max-width: 620px) {
-    .contenitoress {
-      width: 100%;
-    }
-  
-    .card-title {
-      padding: 20px;
-      font-size: 20px;
-    }
-  
-    .card {
-      width: 80%;
-    }
-  }
-  
+.second-title {
+    font-size: 50px;
+}
+*/
 
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 30px;
+    }
 
+    .second-title {
+        font-size: 13px;
+    }
+}
 
+@media screen and (max-width: 641px) {
+    .main-title {
+        font-size: 25px;
+    }
+
+    .second-title {
+        font-size: 13px;
+    }
+
+    .navbar-brand > img {
+        height: 60px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .main-title {
+        font-size: 23px;
+    }
+
+    .second-title {
+        font-size: 13px;
+    }
+
+    .copy {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .navbar-brand > img {
+        height: 60px;
+        width: 100px;
+    }
+}
